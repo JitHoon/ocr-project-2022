@@ -58,14 +58,14 @@ body {
 }
 
 .Searching__Photo p {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Jua", sans-serif;
   font-size: 20px;
 }
 
 .Searching__Photo button:hover {
   position: absolute;
-  width: 110px;
+  width: 120px;
   height: 120px;
   border-radius: 50%;
   opacity: 100%;
@@ -79,7 +79,7 @@ body {
 }
 
 .Searching__Typing p {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Jua", sans-serif;
   font-size: 20px;
 }
