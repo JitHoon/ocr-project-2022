@@ -8,33 +8,141 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.Welcome-header {
-  margin-top: 145px;
-  text-align: center;
+.Welcome-header,
+.Searching,
+.Imformation,
+.End {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
 }
 
 .Welcome-header__title {
-  margin-bottom: 100px;
+  margin-top: 60px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+}
+
+.Welcome-header__title2 {
+  margin-top: 25px;
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
 }
 
-.Welcome-header__how {
-  width: 50%;
+.Searching__how {
+  margin-top: 80px;
   font-family: "Jua", sans-serif;
-  font-size: 15px;
+  font-size: 25px;
 }
 
-#searching-form {
-  margin-bottom: 20px;
+.Searching__Photo {
+  margin-top: 50px;
 }
 
-.Welcome-header > a {
-  margin-top: 145px;
+.Searching__Photo button {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  opacity: 20%;
+}
+
+.Searching__Photo img {
+  width: 120px;
+  height: 120px;
+}
+
+.Searching__Photo p {
+  margin-top: 10px;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+}
+
+.Searching__Photo button:hover {
+  position: absolute;
+  width: 110px;
+  height: 120px;
+  border-radius: 50%;
+  opacity: 100%;
+}
+
+.Searching__Typing {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-top: 50px;
+}
+
+.Searching__Typing p {
+  margin-top: 10px;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+}
+
+.bnt-search {
+  width: 120px;
+  height: 70px;
+  border-style: none;
+  font-size: 40px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.input-search {
+  text-align: center;
+  height: 50px;
+  width: 20px;
+  border-style: none;
+  padding: 10px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(214, 153, 216);
+  opacity: 65%;
+  padding-right: 85px;
+  color: #fff;
+}
+
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.input-search:focus {
+  width: 240px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.End > a {
+  height: 100px;
+  margin-top: 100px;
   color: rgb(130, 197, 255);
 }
