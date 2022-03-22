@@ -14,9 +14,11 @@
         <i class="fas fa-wifi"></i>
         <!--To DO: Wifi Icon-->
       </div>
+
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
+
       <div class="status-bar__column">
         <span>70%</span>
         <i class="fas fa-battery-three-quarters"></i>
@@ -26,19 +28,37 @@
     </div>
 
     <header class="Welcome-header">
-      <p class="Welcome-header__title">Welcome to "BSL Guide" OCR Service!</p>
-
-      <form id="searching-form">
-        <input type="search" placeholder="임대인의 전화번호를 입력하세요" />
-      </form>
-
-      <p class="Welcome-header__how">
-        임대인의 번호를 '직접 검색' 혹은 '촬영 검색'하여 입맛에 맞는 방을
-        찾으세요.
-      </p>
-
-      <a href="#">Go TO Download "BSL Guide"</a>
+      <p class="Welcome-header__title">Welcome to</p>
+      <p class="Welcome-header__title2">"BSL Guide" OCR Service</p>
     </header>
+
+    <nav class="Searching">
+      <p class="Searching__how">임대인의 번호를 검색하세요</p>
+
+      <div class="Searching__Photo">
+        <button class="Searching__Photo-bnt"></button>
+        <img src="screenshot/camera.png" />
+        <p>사진으로 검색</p>
+      </div>
+
+      <div class="Searching__Typing">
+        <button class="bnt-search">
+          <i class="fas fa-search"></i>
+        </button>
+        <input
+          type="text"
+          class="input-search"
+          placeholder="   Type the Number..."
+          maxlength="11"
+          pattern="[0-9]+"
+        />
+        <p>타이핑으로 검색</p>
+      </div>
+    </nav>
+
+    <footer class="End">
+      <a href="#">Go TO Download "BSL Guide"</a>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
