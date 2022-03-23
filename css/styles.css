@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Jua&family=Permanent+Marker&display=swap");
 @import "reset.css";
 @import "searching.css";
+@import "background.css";
 
 body {
   background-color: rgb(0, 15, 58);
