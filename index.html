@@ -12,36 +12,40 @@
     ></script>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-        <!--To DO: Wifi Icon-->
-      </div>
-
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-
-      <div class="status-bar__column">
-        <span>70%</span>
-        <i class="fas fa-battery-three-quarters"></i>
-        <i class="fas fa-bolt"></i>
-        <!--Lightning Icon-->
-      </div>
-    </div>
-
     <header class="Welcome-header">
-      <p class="Welcome-header__title">Welcome to</p>
-      <p class="Welcome-header__title2">"BSL Guide" OCR Service</p>
+      <svg viewBox="0 0 400 300">
+        <text
+          class="Welcome-header__title"
+          x="50%"
+          y="30%"
+          text-anchor="middle"
+        >
+          Welcome to
+        </text>
+        <text
+          class="Welcome-header__title2"
+          x="50%"
+          y="55%"
+          text-anchor="middle"
+        >
+          OCR Service
+        </text>
+        <text
+          class="Welcome-header__title3"
+          x="50%"
+          y="95%"
+          text-anchor="middle"
+        >
+          임대인의 번호를 검색하세요
+        </text>
+      </svg>
     </header>
 
     <nav class="Searching">
-      <p class="Searching__how">임대인의 번호를 검색하세요</p>
-
       <div class="Searching__Photo">
-        <button class="Searching__Photo-bnt"></button>
-        <img src="screenshot/camera.png" />
+        <label class="Searching__Photo--img">
+          <input class="bubble" type="image" src="screenshot/camera.png" />
+        </label>
         <p>사진으로 검색</p>
       </div>
 
