@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Jua&family=Permanent+Marker&display=swap");
 @import "reset.css";
-@import "status-bar.css";
+@import "searching.css";
 
 body {
   background-color: rgb(0, 15, 58);
@@ -23,126 +23,47 @@ body {
 }
 
 .Welcome-header__title {
-  margin-top: 60px;
   font-family: "Permanent Marker", cursive;
-  font-size: 30px;
+  letter-spacing: 5px;
+  stroke: #ffffff;
+  font-size: 26px;
+  stroke-width: 1;
+  animation: textAnimate 6s infinite alternate;
 }
 
 .Welcome-header__title2 {
-  margin-top: 25px;
   font-family: "Permanent Marker", cursive;
-  font-size: 50px;
+  letter-spacing: 5px;
+  stroke: #ffa5d8;
+  font-size: 48px;
+  stroke-width: 1;
+  animation: textAnimate 6s infinite alternate;
 }
 
-.Searching__how {
-  margin-top: 80px;
+.Welcome-header__title3 {
   font-family: "Jua", sans-serif;
-  font-size: 25px;
+  letter-spacing: 3px;
+  font-size: 23px;
+  stroke-width: 0;
+  animation: textAnimate 1.5s infinite alternate;
 }
 
-.Searching__Photo {
-  margin-top: 50px;
-}
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: white;
+  }
 
-.Searching__Photo button {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  opacity: 20%;
-}
-
-.Searching__Photo img {
-  width: 120px;
-  height: 120px;
-}
-
-.Searching__Photo p {
-  margin-top: 15px;
-  font-family: "Jua", sans-serif;
-  font-size: 20px;
-}
-
-.Searching__Photo button:hover {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  opacity: 100%;
-}
-
-.Searching__Typing {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-  margin-top: 50px;
-}
-
-.Searching__Typing p {
-  margin-top: 15px;
-  font-family: "Jua", sans-serif;
-  font-size: 20px;
-}
-
-.bnt-search {
-  width: 120px;
-  height: 70px;
-  border-style: none;
-  font-size: 40px;
-  font-weight: bold;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  right: 0px;
-  color: #ffffff;
-  background-color: transparent;
-  pointer-events: painted;
-}
-
-.btn-search:focus ~ .input-search {
-  width: 300px;
-  border-radius: 0px;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-}
-
-.input-search {
-  text-align: center;
-  height: 50px;
-  width: 20px;
-  border-style: none;
-  padding: 10px;
-  font-size: 30px;
-  letter-spacing: 2px;
-  outline: none;
-  border-radius: 25px;
-  transition: all 0.5s ease-in-out;
-  background-color: rgb(214, 153, 216);
-  opacity: 65%;
-  padding-right: 85px;
-  color: #fff;
-}
-
-.input-search::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 100;
-  text-align: center;
-}
-
-.input-search:focus {
-  width: 240px;
-  border-radius: 0px;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: rgba(250, 189, 242, 0);
+  }
 }
 
 .End > a {
   height: 100px;
-  margin-top: 100px;
+  margin-top: 55px;
   color: rgb(130, 197, 255);
 }
