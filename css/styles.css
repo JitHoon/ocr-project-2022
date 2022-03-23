@@ -62,9 +62,3 @@ body {
     fill: rgba(250, 189, 242, 0);
   }
 }
-
-.End > a {
-  height: 100px;
-  margin-top: 55px;
-  color: rgb(130, 197, 255);
-}
