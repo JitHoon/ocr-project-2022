@@ -1,9 +1,12 @@
 /*카메라 이미지 버블 효과 css*/
 
 .bubble {
-  font: 1em/1.5 sans-serif;
   display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font: 1em/1.5 sans-serif;
   -webkit-tap-highlight-color: transparent;
+  animation: float 4s ease-in-out infinite;
 }
 
 .bubble,
