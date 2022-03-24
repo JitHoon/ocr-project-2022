@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Jua&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Black+Han+Sans&family=Gothic+A1:wght@500&family=Jua&family=Permanent+Marker&display=swap");
 @import "reset.css";
 @import "searching.css";
 @import "background.css";
@@ -24,7 +24,7 @@ body {
 }
 
 .Welcome-header__title {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Bebas Neue", cursive;
   letter-spacing: 5px;
   stroke: #ffffff;
   font-size: 26px;
@@ -33,7 +33,7 @@ body {
 }
 
 .Welcome-header__title2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Bebas Neue", cursive;
   letter-spacing: 5px;
   stroke: #ffa5d8;
   font-size: 48px;
@@ -42,11 +42,11 @@ body {
 }
 
 .Welcome-header__title3 {
-  font-family: "Jua", sans-serif;
-  letter-spacing: 3px;
-  font-size: 23px;
+  font-family: "Gothic A1", sans-serif;
+  letter-spacing: 1px;
+  font-size: 21px;
   stroke-width: 0;
-  animation: textAnimate 1.5s infinite alternate;
+  animation: textAnimate 1s infinite alternate;
 }
 
 @keyframes textAnimate {
