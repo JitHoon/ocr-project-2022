@@ -21,7 +21,7 @@
 }
 
 .bubble {
-  font: 1em/1.5 sans-serif;
+  font: 1em sans-serif;
   display: block;
   -webkit-tap-highlight-color: transparent;
 }
