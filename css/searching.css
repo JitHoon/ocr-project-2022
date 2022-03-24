@@ -12,16 +12,19 @@
 
 .Searching__Photo {
   --bubbleTiming: cubic-bezier(0.5, 0.15, 0.25, 1.75);
+  font-size: calc(35px + (60 - 40) * (100vw - 320px) / (1280 - 320));
 }
 
 .Searching__Photo--img {
   display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
   -webkit-tap-highlight-color: transparent;
   animation: float 4s ease-in-out infinite;
 }
 
 .bubble {
-  font: 1em sans-serif;
+  font: 1em/1.5 sans-serif;
   display: block;
   -webkit-tap-highlight-color: transparent;
 }
@@ -74,11 +77,11 @@
       hsla(0, 0%, 100%, 0) 50%
     );
   box-shadow: 0 -0.06em 0.1em hsl(0, 90%, 100%) inset,
-    0 -0.15em 0.4em hsl(296, 100%, 3%) inset,
-    0 0.05em 0.05em hsl(305, 100%, 11%) inset,
+    0 -0.15em 0.4em hsl(293, 100%, 21%) inset,
+    0 0.05em 0.05em hsl(305, 100%, 26%) inset,
     0.05em 0 0.1em hsl(0, 90%, 100%) inset,
     -0.05em 0 0.1em hsl(0, 90%, 100%) inset,
-    0 0.1em 0.4em hsl(310, 100%, 21%) inset;
+    0 0.1em 0.4em hsl(310, 100%, 30%) inset;
   cursor: pointer;
   position: relative;
   width: 2em;
@@ -136,8 +139,8 @@
 
 .bubble:focus:active,
 .bubble:hover:active {
-  width: 3.6em;
-  height: 2.4em;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .bubble:focus:before,
@@ -169,8 +172,8 @@
 
   .bubble:focus:active,
   .bubble:hover:active {
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
   }
 
   .bubble:focus:before,
