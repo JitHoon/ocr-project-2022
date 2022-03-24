@@ -220,7 +220,7 @@
 
 .bnt-search {
   width: 110px;
-  height: 70px;
+  height: 50px;
   border-style: none;
   font-size: 25px;
   font-weight: bold;
@@ -244,10 +244,10 @@
 
 .input-search {
   text-align: center;
-  height: 50px;
-  width: 10px;
+  height: 45px;
+  width: 20px;
+  padding-right: 70px;
   border-style: none;
-  padding: 10px;
   font-size: 30px;
   letter-spacing: 2px;
   outline: none;
@@ -255,7 +255,6 @@
   transition: all 0.5s ease-in-out;
   background-color: rgb(254, 241, 255);
   opacity: 45%;
-  padding-right: 85px;
   color: #fff;
 }
 
