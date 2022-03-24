@@ -39,10 +39,10 @@
   }
 }
 /*Shrinking for mobile*/
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   .waves {
-    height: 300px;
-    min-height: 300px;
+    height: 400px;
+    min-height: 400px;
   }
   .content {
     height: 100vh;
