@@ -42,12 +42,16 @@
     </header>
 
     <nav class="Searching">
-      <form class="Searching__Photo">
+      <!--사진으로 검색을 누르면 ocr 동작 서버로 이동해야함-->
+      <!--번호가 맞는지 확인하는 동작을 추가하여 전송 버튼을 누르도록 유도-->
+      <!--전송 버튼을 누르면 db 서버로 검색을 요청-->
+      <form class="Searching__Photo" action="" method="post">
         <input class="bubble" type="image" src="screenshot/camera.png" />
       </form>
       <p class="Searching__Photo--p">사진으로 검색</p>
 
-      <form class="Searching__Typing">
+      <!--타이핑으로 검색에서 돋보기를 누르면 db 서버로 검색을 요청-->
+      <form class="Searching__Typing" action="" method="post">
         <input class="bnt-search" type="image" src="screenshot/find.png" />
         <input
           type="text"
@@ -61,7 +65,9 @@
     </nav>
 
     <footer class="End">
-      <a href="#">Go to Download "BSL Guide"</a>
+      <form class="End__download" action="showing-test.html" method="get">
+        <a href="#">Go to Download "BSL Guide"</a>
+      </form>
     </footer>
     <script src="./index.js"></script>
   </body>
