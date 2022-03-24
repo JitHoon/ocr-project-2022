@@ -42,17 +42,13 @@
     </header>
 
     <nav class="Searching">
-      <div class="Searching__Photo">
-        <label class="Searching__Photo--img">
-          <input class="bubble" type="image" src="screenshot/camera.png" />
-        </label>
-        <p>사진으로 검색</p>
-      </div>
+      <form class="Searching__Photo">
+        <input class="bubble" type="image" src="screenshot/camera.png" />
+      </form>
+      <p class="Searching__Photo--p">사진으로 검색</p>
 
-      <div class="Searching__Typing">
-        <button class="bnt-search">
-          <i class="fas fa-search"></i>
-        </button>
+      <form class="Searching__Typing">
+        <input class="bnt-search" type="image" src="screenshot/find.png" />
         <input
           type="text"
           class="input-search"
@@ -60,8 +56,8 @@
           maxlength="11"
           pattern="[0-9]+"
         />
-        <p>타이핑으로 검색</p>
-      </div>
+      </form>
+      <p class="Searching__Typing--p">타이핑으로 검색</p>
     </nav>
 
     <footer class="End">
