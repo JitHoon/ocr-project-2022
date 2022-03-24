@@ -81,8 +81,8 @@
     0 0.1em 0.4em hsl(310, 100%, 21%) inset;
   cursor: pointer;
   position: relative;
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   transform-style: preserve-3d;
   transition-property: box-shadow, transform, width, height;
   transition-timing-function: ease-in-out, ease-in-out, var(--bubbleTiming),
