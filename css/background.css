@@ -39,7 +39,7 @@
   }
 }
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .waves {
     height: 300px;
     min-height: 300px;
