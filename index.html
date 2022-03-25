@@ -45,8 +45,17 @@
       <!--사진으로 검색을 누르면 ocr 동작 서버로 이동해야함-->
       <!--번호가 맞는지 확인하는 동작을 추가하여 전송 버튼을 누르도록 유도-->
       <!--전송 버튼을 누르면 db 서버로 검색을 요청-->
-      <label for="Searching__camera bubble">
+      <form class="Searching__Photo" action="" method="post">
+        <input class="bubble" type="image" src="screenshot/camera.png" />
         <input
+          type="file"
+          accept="image/*"
+          capture="camera"
+          style="display: none"
+        />
+      </form>
+      <!--카메라 호출(input)과 버튼 이미지 입히기(div)-->
+      <!--input
           class="Searching__camera--button bubble"
           type="file"
           accept="image/*"
@@ -58,14 +67,11 @@
           onclick="onclick=document.all.file.click()"
         >
           <i class="fas fa-search"></i>
-        </div>
-      </label>
-
-      <!--form class="Searching__Photo" action="showing.html" method="get"></form-->
+        </div--->
       <p class="Searching__Photo--p">사진으로 검색</p>
 
       <!--타이핑으로 검색에서 돋보기를 누르면 db 서버로 검색을 요청-->
-      <form class="Searching__Typing" action="" method="post">
+      <form class="Searching__Typing" action="showing.html" method="get">
         <input class="bnt-search" type="image" src="screenshot/find.png" />
         <input
           type="text"
