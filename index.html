@@ -45,8 +45,9 @@
       <!--사진으로 검색을 누르면 ocr 동작 서버로 이동해야함-->
       <!--번호가 맞는지 확인하는 동작을 추가하여 전송 버튼을 누르도록 유도-->
       <!--전송 버튼을 누르면 db 서버로 검색을 요청-->
-      <form class="Searching__Photo" action="" method="post">
+      <form class="Searching__Photo" action="showing.html" method="get">
         <input class="bubble" type="image" src="screenshot/camera.png" />
+        <input type="file" accept="image/*" capture="camera" />
       </form>
       <p class="Searching__Photo--p">사진으로 검색</p>
 
@@ -65,9 +66,10 @@
     </nav>
 
     <footer class="End">
-      <form class="End__download" action="showing-test.html" method="get">
-        <a href="#">Go to Download "BSL Guide"</a>
-      </form>
+      <a
+        href="https://apps.apple.com/ng/app/%EB%B0%A9%EC%8A%90%EB%9E%AD%EA%B0%80%EC%9D%B4%EB%93%9C/id1594068890"
+        >Go to Download "BSL Guide"</a
+      >
     </footer>
     <script src="./index.js"></script>
   </body>
