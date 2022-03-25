@@ -4,10 +4,13 @@
 /*html 백지화 css*/
 @import "start/reset.css";
 
-/*첫 화면 css*/
+/*first-page css*/
 @import "first-page/welcomeheader.css";
 @import "first-page/searching.css";
 @import "first-page/bubble.css";
+
+/*second-page css*/
+@import "second-page/Menu.css";
 
 /*전체 화면 설정, 배경화면 애니메이션, 글자색*/
 body {
