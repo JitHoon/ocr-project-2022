@@ -1,0 +1,22 @@
+.Menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 40px;
+  /*패딩을 설정하면 처음 지정한 너비에 더해서 박스가 만들어지므로 box-sizing을 사용*/
+  box-sizing: border-box;
+
+  background-color: white;
+  opacity: 75%;
+
+  border-top: 1px solid rgb(121, 121, 121, 0.2);
+}
+
+.Menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Menu__link {
+  color: #2e363e;
+}
