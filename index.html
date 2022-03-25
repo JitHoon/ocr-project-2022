@@ -45,10 +45,23 @@
       <!--사진으로 검색을 누르면 ocr 동작 서버로 이동해야함-->
       <!--번호가 맞는지 확인하는 동작을 추가하여 전송 버튼을 누르도록 유도-->
       <!--전송 버튼을 누르면 db 서버로 검색을 요청-->
-      <form class="Searching__Photo" action="showing.html" method="get">
-        <input class="bubble" type="image" src="screenshot/camera.png" />
-        <input type="file" accept="image/*" capture="camera" />
-      </form>
+      <label for="Searching__camera bubble">
+        <input
+          class="Searching__camera--button bubble"
+          type="file"
+          accept="image/*"
+          capture="camera"
+          style="display: none"
+        />
+        <div
+          class="Searching__camera--button-img"
+          onclick="onclick=document.all.file.click()"
+        >
+          <i class="fas fa-search"></i>
+        </div>
+      </label>
+
+      <!--form class="Searching__Photo" action="showing.html" method="get"></form-->
       <p class="Searching__Photo--p">사진으로 검색</p>
 
       <!--타이핑으로 검색에서 돋보기를 누르면 db 서버로 검색을 요청-->
