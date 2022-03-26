@@ -1,0 +1,123 @@
+/*룸 형태, 층 수, 평 수, 향, 입주 가능 일자, 관리비*/
+.main-imform {
+  width: 100%;
+  height: 35vh;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.main-imform__box {
+  width: 100%;
+  height: 30%;
+  margin-top: 10px;
+
+  padding-right: 40px;
+  padding-left: 40px;
+  box-sizing: border-box;
+
+  background-color: black;
+  opacity: 65%;
+}
+
+.main-imform__box23 {
+  display: flex;
+  align-items: center;
+}
+
+.main-imform__contents1 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-imform__contents1 p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.main-imform__contents23 {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.main-imform__contents23 i {
+  margin-right: 40px;
+}
+
+.main-imform__contents23 div {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.main-imform__contents23 span {
+  font-size: 15px;
+}
+
+.span3 span {
+  margin-top: 5px;
+}
+
+/*매물 위치 정보*/
+
+.map-imform {
+  width: 100%;
+  height: 25vh;
+
+  display: flex;
+}
+
+.map-imform__box {
+  width: 100%;
+  height: 90%;
+  margin-top: 20px;
+
+  padding-right: 40px;
+  padding-left: 40px;
+  box-sizing: border-box;
+
+  background-color: black;
+  opacity: 20%;
+}
+
+.map-imform__box i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+/*임대인 작성 추가 정보*/
+
+.more-imform {
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+}
+
+.more-imform__box {
+  width: 100%;
+  height: 90%;
+  margin-top: 20px;
+
+  padding-right: 40px;
+  padding-left: 40px;
+  box-sizing: border-box;
+
+  background-color: black;
+  opacity: 65%;
+}
+
+.more-imform__box text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
