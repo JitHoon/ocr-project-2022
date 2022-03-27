@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <link rel="stylesheet" href="css/main-styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"BSL Guide" OCR Service</title>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="first-body">
+    <header class="Welcome-header">
+      <svg viewBox="0 0 400 300">
+        <text
+          class="Welcome-header__title"
+          x="50%"
+          y="30%"
+          text-anchor="middle"
+        >
+          Welcome to
+        </text>
+        <text
+          class="Welcome-header__title2"
+          x="50%"
+          y="55%"
+          text-anchor="middle"
+        >
+          OCR Service
+        </text>
+        <text
+          class="Welcome-header__title3"
+          x="50%"
+          y="95%"
+          text-anchor="middle"
+        >
+          임대인의 번호를 검색하세요
+        </text>
+      </svg>
+    </header>
+
+    <nav class="Searching">
+      <!--사진으로 검색을 누르면 ocr 동작 서버로 이동해야함-->
+      <!--번호가 맞는지 확인하는 동작을 추가하여 전송 버튼을 누르도록 유도-->
+      <!--전송 버튼을 누르면 db 서버로 검색을 요청-->
+      <form class="Searching__Photo" action="" method="post">
+        <input class="bubble" type="image" src="screenshot/camera.png" />
+        <input
+          type="file"
+          accept="image/*"
+          capture="camera"
+          style="display: none"
+        />
+      </form>
+      <!--카메라 호출(input)과 버튼 이미지 입히기(div)-->
+      <!--input
+          class="Searching__camera--button bubble"
+          type="file"
+          accept="image/*"
+          capture="camera"
+          style="display: none"
+        />
+        <div
+          class="Searching__camera--button-img"
+          onclick="onclick=document.all.file.click()"
+        >
+          <i class="fas fa-search"></i>
+        </div--->
+      <p class="Searching__Photo--p">사진으로 검색</p>
+
+      <!--타이핑으로 검색에서 돋보기를 누르면 db 서버로 검색을 요청-->
+      <form class="Searching__Typing" action="second-rooms.html" method="get">
+        <input class="bnt-search" type="image" src="screenshot/find.png" />
+        <input
+          type="text"
+          class="input-search"
+          placeholder="   Type the Number..."
+          minlength="10"
+          maxlength="11"
+          pattern="[0-9]+"
+          required
+        />
+      </form>
+      <p class="Searching__Typing--p">타이핑으로 검색</p>
+    </nav>
+
+    <footer class="End">
+      <a
+        href="https://apps.apple.com/ng/app/%EB%B0%A9%EC%8A%90%EB%9E%AD%EA%B0%80%EC%9D%B4%EB%93%9C/id1594068890"
+        >Go to Download "BSL Guide"</a
+      >
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
