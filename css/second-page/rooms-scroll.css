@@ -74,10 +74,6 @@
 
 /* PAGE STYLING */
 
-.second-body {
-  text-align: center;
-}
-
 .rooms-main {
   width: 90vw;
   margin: 0 auto;
@@ -141,7 +137,7 @@
   object-fit: cover;
 }
 
-.btn {
+.btn--accent {
   background: rgb(55, 19, 122);
   opacity: 70%;
   color: rgb(255 255 255);
