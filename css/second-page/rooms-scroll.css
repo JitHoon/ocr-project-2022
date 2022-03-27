@@ -62,7 +62,6 @@
     --delay: calc(var(--index0) * 1s);
 
     animation: var(--duration) linear scale var(--delay) forwards;
-    animation-timeline: cards-element-scrolls-in-body;
   }
 
   @keyframes scale {
