@@ -1,6 +1,6 @@
 :root {
-  --card-height: 100vw;
-  --card-margin: 200px;
+  --card-height: 152vw;
+  --card-margin: 150px;
   --card-top-offset: 20px;
   --numcards: 4;
   --outline-width: 0px;
@@ -99,7 +99,9 @@
   display: grid;
   grid-template-areas: "text img";
   grid-template-columns: 1fr 1.4fr;
-  grid-template-rows: auto;
+
+  /*카드 크기 높이*/
+  grid-template-rows: 300px;
 
   font-size: 17px;
 
@@ -110,7 +112,7 @@
   grid-area: text;
   width: 80%;
   place-self: center;
-  text-align: left;
+  text-align: center;
 
   font-family: "Gothic A1", sans-serif;
 
@@ -121,7 +123,7 @@
 
 .card__content h5 {
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 70px;
   margin-bottom: 2px;
 }
 
