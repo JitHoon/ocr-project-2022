@@ -20,6 +20,7 @@
 @import "second-page/background-effect.css";
 
 /*third-page css*/
+@import "third-page/flip.css";
 @import "third-page/photo-zone.css";
 @import "third-page/imform.css";
 
@@ -40,10 +41,6 @@
 .second-body {
   height: 200vh;
   text-align: center;
-}
-
-.third-body {
-  height: 168vh;
 }
 
 /*배경화면 애니메이션 동작*/
