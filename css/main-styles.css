@@ -84,8 +84,11 @@
   align-items: center;
 }
 
-.card > a {
-  position: absolute;
+#card_4 {
+  display: flex;
+  flex-direction: column;
+}
 
-  margin-top: 450px;
+.fuck {
+  margin-top: 50px;
 }
