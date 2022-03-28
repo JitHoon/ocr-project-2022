@@ -1,0 +1,30 @@
+#splash-screen {
+  background-color: rgb(206, 128, 230);
+  color: white;
+
+  position: absolute; /*body 기준일 때는 relative 불필요*/
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  animation: welcomescreen 0.5s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+#splash-screen i {
+  margin-bottom: 100px;
+}
+
+@keyframes welcomescreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
