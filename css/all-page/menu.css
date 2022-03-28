@@ -1,0 +1,66 @@
+.Menu {
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px;
+  /*패딩을 설정하면 처음 지정한 너비에 더해서 박스가 만들어지므로 box-sizing을 사용*/
+  box-sizing: border-box;
+
+  background-color: white;
+  opacity: 75%;
+
+  animation: appear 1s ease-in-out;
+}
+
+.Menu2 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 40px;
+  /*패딩을 설정하면 처음 지정한 너비에 더해서 박스가 만들어지므로 box-sizing을 사용*/
+  box-sizing: border-box;
+
+  background-color: white;
+  opacity: 75%;
+
+  animation: appear 1s ease-in-out;
+}
+
+.Menu2__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Menu2__bnt:nth-child(1) {
+  animation: appear 1s ease-in-out;
+}
+
+.Menu2__bnt:nth-child(2) {
+  animation: appear 1.5s ease-in-out;
+}
+
+.Menu2__bnt:nth-child(3) {
+  animation: appear 2s ease-in-out;
+}
+
+.Menu__link,
+.Menu2__link {
+  color: #2e363e;
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 75%;
+  }
+}
