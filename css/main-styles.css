@@ -78,18 +78,6 @@
   color: rgb(130, 197, 255);
 }
 
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#card_4 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
-
 .bls-link {
   margin-top: 50px;
 }
