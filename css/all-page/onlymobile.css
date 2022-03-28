@@ -1,0 +1,27 @@
+#only-mobile,
+#no-landscpae {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(206, 128, 230);
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+@media screen and (min-width: 420px) {
+  #only-mobile {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  #only-mobile {
+    display: none;
+  }
+}
