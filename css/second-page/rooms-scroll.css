@@ -147,3 +147,15 @@
   padding: 0.5em;
   border-radius: 0.25em;
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card_4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
