@@ -13,8 +13,7 @@
   position: relative;
   display: block;
   text-align: center;
-  width: 210px;
-  height: 44px;
+  width: 53%;
 
   line-height: 44px;
   margin: 0px 60px;
@@ -78,8 +77,8 @@
 
 .card-3d-wrap {
   position: relative;
-  width: 350px;
-  height: 420px;
+  width: 90%;
+  height: 69vh;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -103,17 +102,18 @@
   transition: transform 500ms 400ms ease-out;
 }
 
-/*hear man*/
-
 .card-front,
 .card-back {
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 1);
-  position: absolute;
+  opacity: 78%;
+
   border-radius: 6px;
   left: 0;
   top: 0;
+
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
@@ -123,9 +123,15 @@
   box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.07);
 }
 
+.photo-zone0 {
+  background-color: black;
+  opacity: 20%;
+  height: 30vh;
+}
+
 .pricing-wrap {
   position: relative;
-  padding-top: 160px;
+  padding-top: 10px;
   width: 100%;
   display: block;
   z-index: 1;
@@ -136,53 +142,44 @@
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.card-front .pricing-wrap h4:before {
+  background: linear-gradient(10deg, #0a042c, #151d63);
+}
+
+.pricing-wrap h2,
 .pricing-wrap h4 {
   position: relative;
   width: 100%;
   display: block;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  font-size: 22px;
-  line-height: 1.7;
-  color: #102770;
-  transform: translate3d(0, 0, 35px) perspective(100px);
-}
-.pricing-wrap h4:before {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  background: linear-gradient(217deg, #448ad5, #b8eaf9);
-  width: 70px;
-  height: 70px;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 6px 20px 0 rgba(16, 39, 112, 0.3);
-  animation: border-transform 6s linear infinite;
-}
-.card-back .pricing-wrap h4:before {
-  background: linear-gradient(217deg, #648946, #a3c984);
-}
-
-.pricing-wrap h2 {
-  position: relative;
-  width: 100%;
-  display: block;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 1px;
   font-size: 36px;
   line-height: 1.1;
+  margin-top: 5px;
   color: #102770;
   transform: translate3d(0, 0, 30px) perspective(100px);
 }
-.pricing-wrap h2 sup {
-  font-size: 20px;
+
+.pricing-wrap h4 {
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 57px;
 }
+
+.pricing-wrap h4 sup {
+  font-size: 15px;
+  font-weight: 800;
+  margin-right: 100px;
+}
+
+.pricing-wrap h2 sup {
+  font-size: 15px;
+  font-weight: 800;
+}
+
 .pricing-wrap p {
   position: relative;
   width: 100%;
@@ -209,6 +206,7 @@ a:hover {
 .link {
   color: #c4c3ca;
 }
+
 .link:hover {
   color: #ffeba7;
 }
@@ -234,19 +232,8 @@ a:hover {
   background-color: #ffeba7;
 }
 
-.card-back .link {
+.link {
   background-color: #0c1c00;
-}
-
-.card-back .link:hover {
-  color: #0c1c00;
-  background-color: #ffeba7;
-}
-
-.img-wrap img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .card-back {
@@ -259,46 +246,8 @@ a:hover {
   color: #0c1c00;
 }
 
-.img-2 {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  overflow: hidden;
-  width: 100%;
-  transform: translate3d(0, 0, 15px) perspective(100px);
-}
-
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
-}
-
-@keyframes border-transform {
-  0%,
-  100% {
-    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
-  }
-  14% {
-    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
-  }
-  28% {
-    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
-  }
-  42% {
-    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
-  }
-  56% {
-    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
-  }
-  70% {
-    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
-  }
-  84% {
-    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
-  }
 }
