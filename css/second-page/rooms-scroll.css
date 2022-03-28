@@ -1,6 +1,6 @@
 :root {
   --card-height: 152vw;
-  --card-margin: 150px;
+  --card-margin: 5px;
   --card-top-offset: 20px;
   --numcards: 4;
   --outline-width: 0px;
@@ -33,7 +33,7 @@
 
 .card {
   position: sticky;
-  top: 300px;
+  top: 130px;
   padding-top: calc(var(--index) * var(--card-top-offset));
 }
 
